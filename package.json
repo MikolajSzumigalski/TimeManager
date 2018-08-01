@@ -1,0 +1,32 @@
+{
+  "name": "timemanager",
+  "version": "1.0.0",
+  "description": "React todo app",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MikolajSzumigalski/TimeManager.git"
+  },
+  "author": "Mikołaj Szumigalski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MikolajSzumigalski/TimeManager/issues"
+  },
+  "homepage": "https://github.com/MikolajSzumigalski/TimeManager#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^3.6.1",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.6"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  }
+}
